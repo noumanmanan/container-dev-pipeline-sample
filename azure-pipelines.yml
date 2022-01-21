@@ -15,7 +15,7 @@ jobs:
       - task: Docker@2
         inputs:
           containerRegistry: "containerappsuxyacr"
-          repository: "poc/dev"
+          repository: "web/ng"
           command: "buildAndPush"
           Dockerfile: "**/Dockerfile"
           tags: |
@@ -30,7 +30,7 @@ jobs:
       vmImage: "ubuntu-latest"
 
     container:
-      image: bradyjoslinmyacr.azurecr.io/poc/dev:latest
+      image: containerappsuxyacr.azurecr.io/web/ng:0.0.1
       endpoint: "PocAcr"
 
     steps:
