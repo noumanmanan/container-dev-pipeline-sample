@@ -30,7 +30,7 @@ jobs:
       vmImage: "ubuntu-latest"
 
     container:
-      image: containerappsuxyacr.azurecr.io/web/ng:0.0.1
+      image: containerappsuxyacr.azurecr.io/web/ng:$(Build.BuildNumber)
       endpoint: "acr-docker-svc-conn"
 
     steps:
