@@ -31,7 +31,7 @@ jobs:
 
     container:
       image: containerappsuxyacr.azurecr.io/web/ng:0.0.1
-      endpoint: "PocAcr"
+      endpoint: "containerappsuxyacr"
 
     steps:
       - task: Bash@3
