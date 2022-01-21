@@ -31,7 +31,7 @@ jobs:
 
     container:
       image: containerappsuxyacr.azurecr.io/web/ng:0.0.1
-      endpoint: "acr-svcconn"
+      endpoint: "acr-docker-svc-conn"
 
     steps:
       - task: Bash@3
